@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='description' content='Learning HTML and CSS and JS'>
+  <title>Medic_Kids</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        Medic<br>
+        <img src='images/logo.png' width='43' height='auto' alt='Logotype Medic Kids'>Kids
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class='nav__link' href='#promo'>Главная</a></li>
+          <li class="nav__item"><a class='nav__link' href='#advantages'>Преимущества</a></li>
+          <li class="nav__item"><a class='nav__link' href='#appointment'>Наши врачи</a></li>
+          <li class="nav__item"><a class='nav__link' href='#comment'>Отзывы</a></li>
+          <li class="nav__item"><a class='nav__link' href='#services'>Услуги</a></li>
+          <li class="nav__item"><a class='nav__link' href='#contacts'>Контакты</a></li>
+        </ul>
+      </nav>
+      <button class='header__call-me' type='button'>Перезвоните мне</button>
+      <div class="header__contacts">
+        <a href='tel:+74953425454'>+7 (495) 342-54-54</a>
+        <p class="header__time">Ежедневно 7:00-20:00</p>
+      </div>
+      <div class="header__burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+
+  <main class='main'>
+
+    <button id='btnTop' onclick='functionTop()' title='Перейти к началу'></button>
+ 
+    <section class="promo" id='promo'>
+      <div class="container">
+        <div class="promo-inner inner">
+          <h1 class="promo-inner__title-h1">
+            Первичный прием педиатра со скидкой 50% в детском
+            медицинском центре
+          </h1>
+          <div class="promo-inner__advantages">
+            <p class="promo-inner__text">
+              Высококвалифицированный персонал и современое оборудование
+            </p>
+            <p class="promo-inner__text">
+              Услуги высокого уровня в области профилактики, лечения и диагностики
+            </p>
+          </div>
+          <a class='promo-inner__appointment' href='#'>Записаться на прием</a>
+          <p class="promo-inner__methods">
+            <span class="promo-inner__figure">
+              <img src='images/30.png' width='63' height='auto' alt='Figure 30'>
+            </span>
+            <span class="promo-inner__treatment">
+              направлений, по которым проводим диагностику и лечение заболеваний
+            </span>
+          </p>
+        </div>
+        <div class='promo-inner__doctor'>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantages" id='advantages'>
+      <div class="container">
+        <h2 class="advantages__title-h2 title-h2">
+          Почему к нам приходят 210 пациентов ежедневно?
+        </h2>
+        <div class="advantages-inner">
+          <div class="advantages-inner__one one">
+            <h3 class="advantages-inner__title-h3 title-h3">
+              По медицинским стандартам
+            </h3>
+            <p class="advantages-inner__text text">
+              Наша клиника оснащена самым современным оборудованием
+            </p>
+            <img class='advantages-inner__list' src='images/list-1.png' width='237' height='auto' alt='List'>
+            <img class='advantages-inner__01' src='images/01.png' width='93' height='auto' alt='01'>
+          </div>
+          <div class="advantages-inner__four four">
+            <h3 class="advantages-inner__title-h3 title-h3">
+              Подарки пациентам
+            </h3>
+            <p class="advantages-inner__text text">
+              После приема врача ребенок получает сувенир
+            </p>
+            <img class='advantages-inner__bear' src='images/bear-4.png' width='246' height='auto' alt='Bear in box'>
+            <img class='advantages-inner__04' src='images/04.png' width='99' height='auto' alt='04'>
+            <img>
+          </div>
+          <div class="advantages-inner__two two">
+            <h3 class="advantages-inner__title-h3 title-h3">
+              Профессиональные,<br> врачи с опытом 8-20 лет
+            </h3>
+            <p class="advantages-inner__text text">
+              Медицинский персонал имеет от 2-х высших образований
+            </p>
+            <img class='advantages-inner__02' src='images/02.png' width='98' height='auto' alt='02'>
+          </div>
+          <div class="advantages-inner__three three">
+            <h3 class="advantages-inner__title-h3 title-h3">
+              Большой выбор услуг
+            </h3>
+            <p class="advantages-inner__text text">
+              Консультации врачей по 30 направлениям
+            </p>
+            <img class='advantages-inner__cubes' src='images/cubes-3.png' width='265' height='auto' alt='Cubes'>
+            <img class='advantages-inner__03' src='images/03.png' width='97' height='auto' alt='03'>
+          </div>
+          <div class="advantages-inner__five five">
+            <h3 class="advantages-inner__title-h3 title-h3">
+              Новые машины скорой помощи
+            </h3>
+            <p class="advantages-inner__text text">
+              Доктор приедет за 7 минут
+            </p>
+            <img class='advantages-inner__car' src='images/car-5.png' width='265' height='auto' alt='Car'>
+            <img class='advantages-inner__05' src='images/05.png' width='97' height='auto' alt='05'>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount">
+      <div class="container discount__container">
+        <div class="discount__col-1">
+          <h2 class="discount__title-h2 title-h2">
+            Получите сертификат на скидку на прием детского врача
+          </h2>
+          <ul class="discount__list">
+            <li class="discount__item">
+              Срок действия сертификата<br> - 2 месяца со дня получения
+            </li>
+            <li class="discount__item">
+              Скидка распространяется только на первичный прием педиатра
+            </li>
+            <li class="discount__item">
+              Электронный сертификат дает право на скидку в размере 50%
+            </li>
+            <li class="discount__item">
+              Сертификат действителен во всех клиниках сети «MedicalKids»
+            </li>
+          </ul>
+        </div>
+        <div class="discount__col-2">
+          <h3 class="discount__title-h3 title-h3">
+            Введите<br> ваши контакты
+          </h3>
+          <p class="discount__subtitle">
+            и получите сертификат<br> на почту в течение 5-ти минут
+          </p>
+          <form class='discount__form' method='post' action='#'>
+            <label><input class='input-name' type='text' name='name' placeholder='Введите ваше имя'></label>
+            <label><input class='input-email' type='email' name='email' placeholder='Введите ваш email'></label>
+            <button class='discount__btn' type='submit'>Получить сертификат</button>
+          </form>
+          <p class="discount__agree">
+            Нажимая на кнопку, вы соглашаетесь на
+            <span class='discount__underline'>обработку персональных данных</span>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="comment" id='comment'>
+      <div class="container">
+        <h2 class="comment__title-h2 title-h2">
+          Узнайте, что говорят о нас пациенты
+        </h2>
+        <div class="comment__inner">
+          <ul class="comment__slider">
+            <li class="comment__slide slide comment__slide--show">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 14'>14 декабря 2019</time> 1</p>
+                <blockquote class="slide__text">
+                  Проходили лечение в данной клинике. Хотим поблагодарить врача Счётчикова Андрея Васильевича за
+                  внимательное отношение, профессионализм в работе. В клинике установлено современное оборудование,
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/nata.jpg' width='55' height='auto' alt='Наталья Иванова'>
+                  <p class="slide__vk">
+                    <a href='#'>Наталья Иванова<br>vk.com/nata0733</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="comment__slide slide comment__slide--show">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 20'>20 декабря 2019</time> 2</p>
+                <blockquote class="slide__text">
+                  Обратились в клинику с целью полного обследования ребенка. На первичном приеме, доктором был составлен
+                  список необходимых услуг с полным описанием. Врач также подробно отвечал на наши вопросы. Все...
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/anazah.jpg' width='55' height='auto' alt='Анна Захарова'>
+                  <p class="slide__vk">
+                    <a href='#'>Анна Захарова<br>vk.com/anazah</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="comment__slide slide comment__slide--show">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 20'>20 декабря 2019</time> 3</p>
+                <blockquote class="slide__text">
+                  Записывал троих детей на прием к врачу офтальмологу. Анна Николаевна врач замечательный и професионал
+                  своего дела! Сумела организовать подход к мальчикам, заинтересовать их в довольно неприятной
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/alret.jpg' width='55' height='auto' alt='Александр Решетников'>
+                  <p class="slide__vk">
+                    <a href='#'>Александр Решетников<br>vk.com/alret</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="comment__slide slide">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 14'>14 декабря 2019</time> 4</p>
+                <blockquote class="slide__text">
+                  Проходили лечение в данной клинике. Хотим поблагодарить врача Счётчикова Андрея Васильевича за
+                  внимательное отношение, профессионализм в работе. В клинике установлено современное оборудование,
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/nata.jpg' width='55' height='auto' alt='Наталья Иванова'>
+                  <p class="slide__vk">
+                    <a href='#'>Наталья Иванова<br>vk.com/nata0733</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="comment__slide slide">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 20'>20 декабря 2019</time> 5</p>
+                <blockquote class="slide__text">
+                  Обратились в клинику с целью полного обследования ребенка. На первичном приеме, доктором был составлен
+                  список необходимых услуг с полным описанием. Врач также подробно отвечал на наши вопросы. Все...
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/anazah.jpg' width='55' height='auto' alt='Анна Захарова'>
+                  <p class="slide__vk">
+                    <a href='#'>Анна Захарова<br>vk.com/anazah</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="comment__slide slide">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 20'>20 декабря 2019</time> 6</p>
+                <blockquote class="slide__text">
+                  Записывал троих детей на прием к врачу офтальмологу. Анна Николаевна врач замечательный и професионал
+                  своего дела! Сумела организовать подход к мальчикам, заинтересовать их в довольно неприятной
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/alret.jpg' width='55' height='auto' alt='Александр Решетников'>
+                  <p class="slide__vk">
+                    <a href='#'>Александр Решетников<br>vk.com/alret</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="comment__slide slide">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 14'>14 декабря 2019</time> 7</p>
+                <blockquote class="slide__text">
+                  Проходили лечение в данной клинике. Хотим поблагодарить врача Счётчикова Андрея Васильевича за
+                  внимательное отношение, профессионализм в работе. В клинике установлено современное оборудование,
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/nata.jpg' width='55' height='auto' alt='Наталья Иванова'>
+                  <p class="slide__vk">
+                    <a href='#'>Наталья Иванова<br>vk.com/nata0733</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="comment__slide slide">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 20'>20 декабря 2019</time> 8</p>
+                <blockquote class="slide__text">
+                  Записывал троих детей на прием к врачу офтальмологу. Анна Николаевна врач замечательный и професионал
+                  своего дела! Сумела организовать подход к мальчикам, заинтересовать их в довольно неприятной
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/alret.jpg' width='55' height='auto' alt='Александр Решетников'>
+                  <p class="slide__vk">
+                    <a href='#'>Александр Решетников<br>vk.com/alret</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="comment__slide slide">
+              <div class="slide__wrapper">
+                <p class='slide__rating'>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                  <span class='slide__star fill'></span>
+                </p>
+                <p class='slide__time'><time datetime='2019 12 20'>20 декабря 2019</time> 9</p>
+                <blockquote class="slide__text">
+                  Обратились в клинику с целью полного обследования ребенка. На первичном приеме, доктором был составлен
+                  список необходимых услуг с полным описанием. Врач также подробно отвечал на наши вопросы. Все...
+                </blockquote>
+                <a class='slide__link' href='#'>Читать весь отзыв</a>
+                <div class="slide__author">
+                  <img class='slide__photo' src='images/anazah.jpg' width='55' height='auto' alt='Анна Захарова'>
+                  <p class="slide__vk">
+                    <a href='#'>Анна Захарова<br>vk.com/anazah</a>
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <button class="comment__prev" type='button'></button>
+          <button class="comment__next" type='button'></button>
+          <ul class="comment__dots">
+            <li class="comment__dot comment__dot--active"></li>
+            <li class="comment__dot"></li>
+            <li class="comment__dot"></li>
+            <li class="comment__dot"></li>
+            <li class="comment__dot"></li>
+            <li class="comment__dot"></li>
+            <li class="comment__dot"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id='services'>
+      <div class="container">
+        <h2 class="services__title-h2 title-h2">
+          Медицинские услуги в нашем центре
+        </h2>
+        <div class="services__inner">
+          <ul class="services__dot-list">
+            <li class="services__dot-item services__dot-item--active">Прием специалистов</li>
+            <li class="services__dot-item">Диагностика</li>
+            <li class="services__dot-item">Прием анализов</li>
+            <li class="services__dot-item">Вакцинация</li>
+            <li class="services__dot-item">Дневной стационар</li>
+            <li class="services__dot-item">Выдача справок</li>
+          </ul>
+          <button class='services__prev' type='button'></button>
+          <button class='services__next' type='button'></button>
+          <ul class="services__slider">
+            <li class="services__slide slide-services slide-services--active">
+              <img class='slide-services__img' src='images/doctor.jpg' width='502' height='auto' alt='At a doctor'>
+              <div class="slide-services__content">
+                <h3 class="slide-services__title-h3 title-h3">
+                  Прием специалистов
+                </h3>
+                <p class='slide-services__subtitle'>
+                  Еждневно с 9:00-20:00
+                </p>
+                <p class='slide-services__text'>
+                  В детском медицинском центре «MedicalKids» проводят консультации врачи более чем по 30 направлениям, а
+                  также специалисты узкого профиля
+                </p>
+                <a class='slide-services__link' href='#'>Узнать расписание</a>
+              </div>
+            </li>
+            <li class="services__slide slide-services">
+              <img class='slide-services__img' src='images/doctor.jpg' width='502' height='auto' alt='At a doctor'>
+              <div class="slide-services__content">
+                <h3 class="slide-services__title-h3 title-h3">
+                  Диагностика
+                </h3>
+                <p class='slide-services__subtitle'>
+                  Еждневно с 9:00-20:00
+                </p>
+                <p class='slide-services__text'>
+                  В детском медицинском центре «MedicalKids» проводят консультации врачи более чем по 30 направлениям, а
+                  также специалисты узкого профиля
+                </p>
+                <a class='slide-services__link' href='#'>Узнать расписание</a>
+              </div>
+            </li>
+            <li class="services__slide slide-services">
+              <img class='slide-services__img' src='images/doctor.jpg' width='502' height='auto' alt='At a doctor'>
+              <div class="slide-services__content">
+                <h3 class="slide-services__title-h3 title-h3">
+                  Прием анализов
+                </h3>
+                <p class='slide-services__subtitle'>
+                  Еждневно с 9:00-20:00
+                </p>
+                <p class='slide-services__text'>
+                  В детском медицинском центре «MedicalKids» проводят консультации врачи более чем по 30 направлениям, а
+                  также специалисты узкого профиля
+                </p>
+                <a class='slide-services__link' href='#'>Узнать расписание</a>
+              </div>
+            </li>
+            <li class="services__slide slide-services">
+              <img class='slide-services__img' src='images/doctor.jpg' width='502' height='auto' alt='At a doctor'>
+              <div class="slide-services__content">
+                <h3 class="slide-services__title-h3 title-h3">
+                  Вакцинация
+                </h3>
+                <p class='slide-services__subtitle'>
+                  Еждневно с 9:00-20:00
+                </p>
+                <p class='slide-services__text'>
+                  В детском медицинском центре «MedicalKids» проводят консультации врачи более чем по 30 направлениям, а
+                  также специалисты узкого профиля
+                </p>
+                <a class='slide-services__link' href='#'>Узнать расписание</a>
+              </div>
+            </li>
+            <li class="services__slide slide-services">
+              <img class='slide-services__img' src='images/doctor.jpg' width='502' height='auto' alt='At a doctor'>
+              <div class="slide-services__content">
+                <h3 class="slide-services__title-h3 title-h3">
+                  Дневной стационар
+                </h3>
+                <p class='slide-services__subtitle'>
+                  Еждневно с 9:00-20:00
+                </p>
+                <p class='slide-services__text'>
+                  В детском медицинском центре «MedicalKids» проводят консультации врачи более чем по 30 направлениям, а
+                  также специалисты узкого профиля
+                </p>
+                <a class='slide-services__link' href='#'>Узнать расписание</a>
+              </div>
+            </li>
+            <li class="services__slide slide-services">
+              <img class='slide-services__img' src='images/doctor.jpg' width='502' height='auto' alt='At a doctor'>
+              <div class="slide-services__content">
+                <h3 class="slide-services__title-h3 title-h3">
+                  Выдача справок
+                </h3>
+                <p class='slide-services__subtitle'>
+                  Еждневно с 9:00-20:00
+                </p>
+                <p class='slide-services__text'>
+                  В детском медицинском центре «MedicalKids» проводят консультации врачи более чем по 30 направлениям, а
+                  также специалисты узкого профиля
+                </p>
+                <a class='slide-services__link' href='#'>Узнать расписание</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment" id='appointment'>
+      <div class="container">
+        <h2 class="visually-hidden">Записаться на прием к врачу</h2>
+        <div class="appointment__inner">
+          <div class="appointment__col-1">
+            <h3 class="appointment__title-h3 title-h3">
+              Запишитесь<br> на прием к врачу
+            </h3>
+            <p class="appointment__subtitle">
+              Заполните форму наш консультант перезвонит в течение 5 минут
+            </p>
+            <form class='appointment__form' method='post' action='#'>
+              <label><input class='input-name' type='text' name='name' placeholder='Введите ваше имя'></label>
+              <label><input class='input-phone' type='tel' name='phone' placeholder='Введите ваш номер'></label>
+              <button class='appointment__btn' type='submit'>Записаться на прием</button>
+            </form>
+            <p class="appointment__agree">
+              Нажимая на кнопку, вы соглашаетесь на
+              <span class='appointment__underline'>обработку персональных данных</span>
+            </p>
+            <div class="appointment__advertisement">
+              Запишитесь на прием и получите полную диагностику ребенка бесплатно
+            </div>
+          </div>
+          <div class="appointment__col-2">
+            <img class='appointment__img' src='images/man-doctor.png' width='585' height='auto' alt='Doctor'>
+            <div class="appointment__doctor">
+              <p class='appointment__name'>Новиков<br> Михаил Самойлович</p>
+              <p class='appointment__speciality'>Дежурный врач-педиатр</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contacts" id='contacts'>
+      <h2 class="contacts__title-h2 title-h2">
+        Наши контакты
+      </h2>
+      <div class="contacts__inner">
+        <div class="contacts__map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac06d4451ac18bc23d617e0f59678f9509b9b918f9936eab39cab079cfed95d08&amp;source=constructor"
+            width="100%" height="100%" frameborder="0">
+          </iframe>
+        </div>
+        <div class="contacts__contacts">
+          <h3 class="visually-hidden">Контакты</h3>
+          <div class="contacts__logo">
+            Medic<br>
+            <img src='images/logo2.png' width='59' height='auto' alt='Logotype Medic Kids'>Kids
+          </div>
+          <h4 class="contacts__title-h4">Общий телефон</h4>
+          <span class='contacts__phone'>+7 (495) 342-54-54</span>
+          <h4 class="contacts__title-h4 clinic">Клиники «MedicalKids»</h4>
+          <span class='contacts__text'>Московский проспект, 97</span>
+          <span class='contacts__text'>Дарвина, 19</span>
+          <span class='contacts__text'>Артиллерийская улица, 27</span>
+          <span class='contacts__text'>Белинского, 40</span>
+          <span class='contacts__text last'>Подполковника Емельянова, 78</span>
+          <h4 class="contacts__title-h4 surgeon">Хирургический комплекс</h4>
+          <span class='contacts__text text1'>ул. Серпуховская, дом 35А</span>
+          <h4 class="contacts__title-h4 daily">Дневной стационар</h4>
+          <span class='contacts__text text1'>ул. Серпуховская, дом 38</span>
+        </div>
+        <!-- <div class="contacts__place">
+          <img src='images/place.png' width='89' height='auto' alt='Medical_Kids'>
+        </div> -->
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer__list">
+        <li class="footer__item">
+          <div class="footer__logo">
+            <a href='#'>
+              Medic<br>
+              <img class='footer__img' src='images/footer-logo.png' width='51' height='auto' alt='Logotype Medic Kids'>Kids
+            </a>
+          </div>
+          <p class='footer__subtitle'>Детский медицинский центр</p>
+        </li>
+        <li class="footer__item">
+          <a class='footer__phone' href='tel:+74953425454'>+7 (495) 342-54-54</a>
+          <p class="footer__time">Ежедневно 7:00-20:00</p>
+        </li>
+        <li class="footer__item">
+          <ul class="footer__politics-list">
+            <li class="footer__politics-item">
+              Согласия на обработку персональных данных
+            </li>
+            <li class="footer__politics-item">
+              Политика конфиденциальности
+            </li>
+            <li class="footer__politics-item">
+              Документы и лицензии
+            </li>
+          </ul>
+        </li>
+        <li class="footer__item">
+          <ul class="footer__social-list">
+            <li class="footer__social-item">
+              <a class='footer__social-link classmate' href='#' aria-label='Одноклассники'>
+                <img src='images/classmate.png' width='11' height='auto' alt='Classmates'>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class='footer__social-link fb' href='#' aria-label='Facebook'>
+                <img src='images/fb.png' width='9' height='auto' alt='Facebook'>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class='footer__social-link inst' href='#' aria-label='Instagram'>
+                <img src='images/inst.png' width='14' height='auto' alt='Instagram'>
+              </a>
+            </li>
+            <li class="footer__social-item">
+              <a class='footer__social-link vk' href='#' aria-label='Вконтакте'>
+                <img src='images/vk.png' width='15' height='auto' alt='Вконтакте'>
+              </a>              
+            </li>
+          </ul>
+          <p class='footer__copyright'>
+            Все права защищены<br>2005-2020 (с)</p>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+
+  <!-- Modal windows -->
+
+  <!-- Заказать звонок -->
+
+  <section class="modal modal-call" aria-label='Модальное окно "Заказать звонок"'>
+    <h3 class='modal-call__title-h3 title-h3'>Заказать звонок</h3>
+    <img class='modal-call__img' src='images/modal-phone.png' width='50' height='auto' alt='Phone'>
+    <form class='modal-call__form' action='#' method='post'>
+      <label class='visually-hidden' for='name'>Ваше имя</label>
+      <input class='modal-call__name' type='text' name='name' id='name' placeholder='Ваше имя'>
+      <label class='visually-hidden' for='phone'>Ваш телефон</label>
+      <input class='modal-call__phone' type='tel' name='phone' id='phone' pattern='\+7-[0-9]{3}-[0-9]{3}-[0-9]{4}'
+        placeholder='Ваш телефон: +7-XXX-XXX-XXXX'>
+      <button class='modal-call__btn' type='submit'>Отправить</button>
+    </form>
+    <button class='modal-call__close' type='button' aria-label='Закрыть'></button>
+  </section>
+
+
+  <!-- Записаться на прием -->
+
+  <section class="modal modal-appointment">
+    <h3 class="modal-appoitment__title-h3 title-h3">
+      Запись на прием к врачу
+    </h3>
+    <form  class='modal-appointment__form' action='#' method='post'>
+      <label for='specialists'>Врач</label>
+      <select id='specialists' size='1' name='specialists'>
+        <option value='Педиатр'selected>Педиатр</option>
+        <option value='Невролог'>Невролог</option>
+        <option value='Хирург'>Хирург</option>
+        <option value='Стоматолог'>Стоматолог</option>
+        <option value='Офтальмолог'>Офтальмолог</option>
+        <option value='Отоларинголог'>Отоларинголог</option>
+        <option value='Психиатр'>Психиатр</option>
+        <option value='Врач УЗИ'>Врач УЗИ</option>
+      </select>
+      <label for='weekdays'>День недели</label>
+      <select id='weekdays' size='1' name='weekdays'>
+        <option value='Понедельник' selected>Понедельник</option>
+        <option value='Вторник'>Вторник</option>
+        <option value='Среда' >Среда</option>
+        <option value='Четверг'>Четверг</option>
+        <option value='Пятница'>Пятница</option>
+      </select>
+      <label for='time'>Время</label>
+      <select id='time' size='1' name='time'>
+        <option value='9.00' selected>9.00</option>
+        <option value='10.00'>10.00</option>
+        <option value='11.00'>11.00</option>
+        <option value='12.00'>12.00</option>
+        <option value='13.00'>13.00</option>
+        <option value='14.00'>14.00</option>
+      </select>
+      <label class='visually-hidden' for='name'>Ваше имя</label>
+      <input class='modal-appointment__name' type='text' name='name' id='name' placeholder='Ваше имя'>
+      <label class='visually-hidden' for='phone'>Ваш телефон</label>
+      <input class='modal-appointment__phone' type='tel' name='phone' id='phone' pattern='\+7-[0-9]{3}-[0-9]{3}-[0-9]{4}'
+        placeholder='Ваш телефон: +7-XXX-XXX-XXXX'>
+        <button class='modal-appointment__btn' type='submit'>Записаться прием</button>  
+    </form>
+    <button class='modal-appointment__close' type='button' aria-label='Закрыть'></button>
+  </section>
+
+
+
+  <script src='js/main.min.js'></script>
+</body>
+
+</html>
