@@ -2684,7 +2684,8 @@ body {
   }
 
   .appointment__img {
-    width: 500px
+    width: 500px;
+    height: auto
   }
 
   .contacts__place {
@@ -2997,7 +2998,7 @@ body {
 
   .appointment__img {
     width: 400px;
-    bottom: -30px
+    bottom: -30px;
   }
 
   .appointment__doctor {
